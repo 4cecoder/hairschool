@@ -1,0 +1,63 @@
+/* NotFound.css */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    text-align: center;
+}
+
+.not-found-title {
+    font-size: 4rem;
+    animation: pulse 2s infinite;
+}
+
+.not-found-text {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.not-found-home-link {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.not-found-home-link:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

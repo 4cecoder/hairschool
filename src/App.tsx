@@ -7,6 +7,8 @@ import './App.css';
 import Footer from "./components/Footer.tsx";
 import Navi from "./components/Navi.tsx";
 import Login from "./pages/Login.tsx";
+import Signup from "./pages/Signup.tsx";
+import NotFound from "./pages/NotFound.tsx";
 
 function App() {
     return (
@@ -22,8 +24,9 @@ function App() {
                         <Route path="/categories" element={<Categories/>}/>
                         <Route path="/subscription" element={<Subscription/>}/>
                         <Route path="/contact" element={<Contact/>}/>
-                        <Route path="*" element={<h1>Not Found</h1>}/>
+                        <Route path="*" element={<NotFound/>}/>
                         <Route path="/login" element={<Login/>}/>
+                        <Route path="/signup" element={<Signup/>}/>
                     </Routes>
                 </main>
 
