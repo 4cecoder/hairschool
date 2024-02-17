@@ -1,5 +1,5 @@
 // pages/Signup.tsx
-import React, {useState} from 'react';
+import {useState} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope, faLock, faUser} from '@fortawesome/free-solid-svg-icons';
 
@@ -10,7 +10,7 @@ const Signup = () => {
         password: '',
     });
 
-    const handleChange = (e) => {
+    const handleChange = (e: { target: { name: any; value: any; }; }) => {
         const {name, value} = e.target;
         setUserDetails(prevDetails => ({
             ...prevDetails,
@@ -18,7 +18,7 @@ const Signup = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         console.log(userDetails); // Here you would typically send the data to your backend
         alert('Signup successful!'); // Placeholder for success feedback
