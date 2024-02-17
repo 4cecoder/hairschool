@@ -4,6 +4,7 @@ import Categories from './pages/Categories';
 import Subscription from './pages/Subscription';
 import Contact from './pages/Contact';
 import './App.css';
+import Footer from "./components/Footer.tsx";
 
 function App() {
     return (
@@ -53,12 +54,8 @@ function App() {
                     </Routes>
                 </main>
 
-                {/* Footer with daisyUI */}
-                <footer className="p-4 footer bg-gray-700 text-white text-center">
-                    <div>
-                        <p>&copy; 2024 HairCutPro. All rights reserved.</p>
-                    </div>
-                </footer>
+                {/* Footer */}
+                <Footer/>
             </div>
         </Router>
     );
