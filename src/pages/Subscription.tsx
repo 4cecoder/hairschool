@@ -10,47 +10,47 @@ const Subscription = () => {
 
                 {/* Plans Container */}
                 <div className="grid md:grid-cols-3 gap-6">
+                    {/* Using daisyUI's Card component for subscription plans */}
                     {/* Basic Plan */}
-                    <div className="bg-white rounded-lg shadow p-6">
-                        <h2 className="font-bold text-xl mb-4">Basic</h2>
-                        <p className="text-gray-600 mb-4">Get access to our basic tutorials.</p>
-                        <ul className="text-gray-600 mb-6">
-                            <li>- Introduction to hairdressing</li>
-                            <li>- Basic cutting techniques</li>
-                            <li>- Styling fundamentals</li>
-                        </ul>
-                        <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                            Subscribe for $9.99/month
-                        </button>
+                    <div className="card bg-base-100 shadow-xl">
+                        <div className="card-body">
+                            <h2 className="card-title">Basic</h2>
+                            <p>Get access to our basic tutorials.</p>
+                            <div className="card-actions justify-end">
+                                <div className="badge badge-outline">Introduction to hairdressing</div>
+                                <div className="badge badge-outline">Basic cutting techniques</div>
+                                <div className="badge badge-outline">Styling fundamentals</div>
+                            </div>
+                            <button className="btn btn-primary btn-block mt-4">Subscribe for $9.99/month</button>
+                        </div>
                     </div>
 
                     {/* Premium Plan */}
-                    <div className="bg-white rounded-lg shadow p-6">
-                        <h2 className="font-bold text-xl mb-4">Premium</h2>
-                        <p className="text-gray-600 mb-4">Everything in Basic, plus:</p>
-                        <ul className="text-gray-600 mb-6">
-                            <li>- Advanced styling techniques</li>
-                            <li>- Color theory and application</li>
-                            <li>- Personalized feedback</li>
-                        </ul>
-                        <button
-                            className="w-full bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-6">
-                            Subscribe for $19.99/month
-                        </button>
+                    <div className="card bg-base-100 shadow-xl">
+                        <div className="card-body">
+                            <h2 className="card-title">Premium</h2>
+                            <p>Everything in Basic, plus:</p>
+                            <div className="card-actions justify-end">
+                                <div className="badge badge-outline">Advanced styling techniques</div>
+                                <div className="badge badge-outline">Color theory and application</div>
+                                <div className="badge badge-outline">Personalized feedback</div>
+                            </div>
+                            <button className="btn btn-secondary btn-block mt-4">Subscribe for $19.99/month</button>
+                        </div>
                     </div>
 
                     {/* Pro Plan */}
-                    <div className="bg-white rounded-lg shadow p-6">
-                        <h2 className="font-bold text-xl mb-4">Pro</h2>
-                        <p className="text-gray-600 mb-4">All Premium features, plus:</p>
-                        <ul className="text-gray-600 mb-6">
-                            <li>- One-on-one coaching sessions</li>
-                            <li>- Access to exclusive webinars</li>
-                            <li>- Early access to new tutorials</li>
-                        </ul>
-                        <button className="w-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
-                            Subscribe for $29.99/month
-                        </button>
+                    <div className="card bg-base-100 shadow-xl">
+                        <div className="card-body">
+                            <h2 className="card-title">Pro</h2>
+                            <p>All Premium features, plus:</p>
+                            <div className="card-actions justify-end">
+                                <div className="badge badge-outline p-5">One-on-one coaching sessions</div>
+                                <div className="badge badge-outline">Access to exclusive webinars</div>
+                                <div className="badge badge-outline">Early access to new tutorials</div>
+                            </div>
+                            <button className="btn btn-accent btn-block mt-4">Subscribe for $29.99/month</button>
+                        </div>
                     </div>
                 </div>
             </div>

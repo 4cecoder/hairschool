@@ -1,45 +1,58 @@
 // pages/Contact.tsx
-
 const Contact = () => {
     return (
         <div className="max-w-md mx-auto mt-10">
             <h1 className="text-3xl font-bold mb-6 text-center">Contact Us</h1>
-            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                        Name
-                    </label>
-                    <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="name" type="text" placeholder="Your Name"/>
+            {/* Using daisyUI's Card component for the form container */}
+            <div className="card bg-base-100 shadow-xl">
+                <div className="card-body">
+                    <form>
+                        <div className="form-control">
+                            <label className="label" htmlFor="name">
+                                <span className="label-text">Name</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Your Name"
+                                className="input input-bordered w-full"
+                            />
+                        </div>
+                        <div className="form-control">
+                            <label className="label" htmlFor="email">
+                                <span className="label-text">Email</span>
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="you@example.com"
+                                className="input input-bordered w-full"
+                            />
+                        </div>
+                        <div className="form-control">
+                            <label className="label" htmlFor="message">
+                                <span className="label-text">Message</span>
+                            </label>
+                            <textarea
+                                id="message"
+                                rows="3"
+                                placeholder="Your message here..."
+                                className="textarea textarea-bordered h-24"
+                            ></textarea>
+                        </div>
+                        {/* Using daisyUI's Button component */}
+                        <div className="form-control mt-6">
+                            <button
+                                className="btn btn-primary"
+                                type="submit">
+                                Send
+                            </button>
+                        </div>
+                    </form>
                 </div>
-                <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                        Email
-                    </label>
-                    <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="email" type="email" placeholder="you@example.com"/>
-                </div>
-                <div className="mb-6">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-                        Message
-                    </label>
-                    <textarea
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="message" placeholder="Your message here..." rows="3"></textarea>
-                </div>
-                <div className="flex items-center justify-between">
-                    <button
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                        type="submit">
-                        Send
-                    </button>
-                </div>
-            </form>
+            </div>
         </div>
     );
 };
 
 export default Contact;
-

@@ -16,14 +16,30 @@ const Home = () => {
                 </section>
                 <section className="my-8">
                     <h2 className="text-3xl font-bold text-gray-800">Featured Tutorials</h2>
-                    {/* Placeholder for featured video content */}
+                    {/* Placeholder for featured video content, now using daisyUI Card component */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-                        <img src="https://via.placeholder.com/300x200" alt="Featured Tutorial"
-                             className="rounded-lg shadow-lg"/>
-                        <img src="https://via.placeholder.com/300x200" alt="Featured Tutorial"
-                             className="rounded-lg shadow-lg"/>
-                        <img src="https://via.placeholder.com/300x200" alt="Featured Tutorial"
-                             className="rounded-lg shadow-lg"/>
+                        {/* Example of using daisyUI's Card component for each tutorial */}
+                        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                            <figure><img src="https://via.placeholder.com/300x200" alt="Featured Tutorial"/></figure>
+                            <div className="card-body">
+                                <h3 className="card-title">Basic Cuts</h3>
+                                <p>Start your journey with the basics of hair cutting.</p>
+                            </div>
+                        </div>
+                        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                            <figure><img src="https://via.placeholder.com/300x200" alt="Featured Tutorial"/></figure>
+                            <div className="card-body">
+                                <h3 className="card-title">Styling Techniques</h3>
+                                <p>Explore creative styling techniques to elevate your skills.</p>
+                            </div>
+                        </div>
+                        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                            <figure><img src="https://via.placeholder.com/300x200" alt="Featured Tutorial"/></figure>
+                            <div className="card-body">
+                                <h3 className="card-title">Advanced Coloring</h3>
+                                <p>Master the art of hair coloring with advanced tutorials.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section className="my-8 text-center">
@@ -31,7 +47,8 @@ const Home = () => {
                     <p className="text-gray-600 mt-2">
                         Sign up to access premium content, join live sessions, and more.
                     </p>
-                    <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    {/* Using daisyUI Button component */}
+                    <button className="btn btn-primary mt-4">
                         Get Started
                     </button>
                 </section>
