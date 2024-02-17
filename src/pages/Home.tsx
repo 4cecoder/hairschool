@@ -1,4 +1,3 @@
-// pages/Home.tsx
 const Home = () => {
     return (
         <div className="bg-gray-50">
@@ -16,24 +15,24 @@ const Home = () => {
                 </section>
                 <section className="my-8">
                     <h2 className="text-3xl font-bold text-gray-800">Featured Tutorials</h2>
-                    {/* Placeholder for featured video content, now using daisyUI Card component */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-                        {/* Example of using daisyUI's Card component for each tutorial */}
-                        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                    {/* Adjusted grid layout for medium screens */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                        {/* daisyUI Card component for each tutorial */}
+                        <div className="card card-compact w-full bg-base-100 shadow-xl">
                             <figure><img src="https://via.placeholder.com/300x200" alt="Featured Tutorial"/></figure>
                             <div className="card-body">
                                 <h3 className="card-title">Basic Cuts</h3>
                                 <p>Start your journey with the basics of hair cutting.</p>
                             </div>
                         </div>
-                        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                        <div className="card card-compact w-full bg-base-100 shadow-xl">
                             <figure><img src="https://via.placeholder.com/300x200" alt="Featured Tutorial"/></figure>
                             <div className="card-body">
                                 <h3 className="card-title">Styling Techniques</h3>
                                 <p>Explore creative styling techniques to elevate your skills.</p>
                             </div>
                         </div>
-                        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                        <div className="card card-compact w-full bg-base-100 shadow-xl">
                             <figure><img src="https://via.placeholder.com/300x200" alt="Featured Tutorial"/></figure>
                             <div className="card-body">
                                 <h3 className="card-title">Advanced Coloring</h3>
@@ -47,7 +46,6 @@ const Home = () => {
                     <p className="text-gray-600 mt-2">
                         Sign up to access premium content, join live sessions, and more.
                     </p>
-                    {/* Using daisyUI Button component */}
                     <button className="btn btn-primary mt-4">
                         Get Started
                     </button>
