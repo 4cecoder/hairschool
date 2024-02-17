@@ -9,6 +9,7 @@ import Navi from "./components/Navi.tsx";
 import Login from "./pages/Login.tsx";
 import Signup from "./pages/Signup.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import About from "./pages/About.tsx";
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                         <Route path="/categories" element={<Categories/>}/>
                         <Route path="/subscription" element={<Subscription/>}/>
                         <Route path="/contact" element={<Contact/>}/>
+                        <Route path="/about" element={<About/>}/>
                         <Route path="*" element={<NotFound/>}/>
                         <Route path="/login" element={<Login/>}/>
                         <Route path="/signup" element={<Signup/>}/>
