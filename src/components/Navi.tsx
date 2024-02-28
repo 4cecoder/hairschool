@@ -32,7 +32,7 @@ const Navi = () => {
                 </div>
             </div>
             <div className="navbar-center">
-                <Link to="/" className="btn btn-ghost normal-case text-xl">HairCutPro</Link>
+                <Link to="/" className="btn btn-ghost normal-case text-xl">Your Platform Name</Link>
             </div>
             <div className="navbar-end">
                 {isLoggedIn ? (

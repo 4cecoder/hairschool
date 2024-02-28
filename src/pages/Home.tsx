@@ -2,44 +2,34 @@ const Home = () => {
     return (
         <div className="bg-gray-50">
             <header className="bg-gray-800 text-white text-center p-6">
-                <h1 className="text-4xl font-bold">HairCutPro</h1>
-                <p className="text-xl mt-2">Premium Hairdressing Videos</p>
+                <h1 className="text-4xl font-bold">Your Platform Name</h1>
+                <p className="text-xl mt-2">Your platform description</p>
             </header>
             <main className="p-4 md:p-8">
                 <section className="my-8">
-                    <h2 className="text-3xl font-bold text-gray-800">Learn From the Best</h2>
+                    <h2 className="text-3xl font-bold text-gray-800">Live Streaming</h2>
                     <p className="text-gray-600 mt-2">
-                        Dive into our extensive library of hairdressing tutorials. From basic cuts to advanced styling,
-                        learn at your own pace, anytime, anywhere.
+                        Broadcast your live streams on multiple platforms. Pay per view or subscription-based live
+                        streaming.
                     </p>
                 </section>
                 <section className="my-8">
-                    <h2 className="text-3xl font-bold text-gray-800">Featured Tutorials</h2>
-                    {/* Adjusted grid layout for medium screens */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-                        {/* daisyUI Card component for each tutorial */}
-                        <div className="card card-compact w-full bg-base-100 shadow-xl">
-                            <figure><img src="https://via.placeholder.com/300x200" alt="Featured Tutorial"/></figure>
-                            <div className="card-body">
-                                <h3 className="card-title">Basic Cuts</h3>
-                                <p>Start your journey with the basics of hair cutting.</p>
-                            </div>
-                        </div>
-                        <div className="card card-compact w-full bg-base-100 shadow-xl">
-                            <figure><img src="https://via.placeholder.com/300x200" alt="Featured Tutorial"/></figure>
-                            <div className="card-body">
-                                <h3 className="card-title">Styling Techniques</h3>
-                                <p>Explore creative styling techniques to elevate your skills.</p>
-                            </div>
-                        </div>
-                        <div className="card card-compact w-full bg-base-100 shadow-xl">
-                            <figure><img src="https://via.placeholder.com/300x200" alt="Featured Tutorial"/></figure>
-                            <div className="card-body">
-                                <h3 className="card-title">Advanced Coloring</h3>
-                                <p>Master the art of hair coloring with advanced tutorials.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 className="text-3xl font-bold text-gray-800">Video on Demand</h2>
+                    <p className="text-gray-600 mt-2">
+                        Access our extensive library of videos on demand. Pay per view or subscription-based access.
+                    </p>
+                </section>
+                <section className="my-8">
+                    <h2 className="text-3xl font-bold text-gray-800">Online Meetings/Webinars</h2>
+                    <p className="text-gray-600 mt-2">
+                        Host online meetings or webinars with ease.
+                    </p>
+                </section>
+                <section className="my-8">
+                    <h2 className="text-3xl font-bold text-gray-800">Social Media Integration</h2>
+                    <p className="text-gray-600 mt-2">
+                        Integrate with various social media platforms for announcements and bookings.
+                    </p>
                 </section>
                 <section className="my-8 text-center">
                     <h2 className="text-3xl font-bold text-gray-800">Join Our Community</h2>

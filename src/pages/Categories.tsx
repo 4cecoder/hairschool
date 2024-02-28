@@ -1,25 +1,15 @@
 // pages/Categories.tsx
 const Categories = () => {
-    // Example categories data
+    // Updated categories data
     const categories = [
         {
-            name: 'Basic Cuts',
-            description: 'Learn the fundamentals of hair cutting.',
+            name: 'New Category 1',
+            description: 'Description for new category 1.',
             image: 'https://via.placeholder.com/150'
         },
         {
-            name: 'Styling',
-            description: 'Explore various hair styling techniques.',
-            image: 'https://via.placeholder.com/150'
-        },
-        {
-            name: 'Coloring',
-            description: 'Master the art of hair coloring and highlights.',
-            image: 'https://via.placeholder.com/150'
-        },
-        {
-            name: 'Men’s Hair',
-            description: 'Specialized techniques for men’s haircuts and styling.',
+            name: 'New Category 2',
+            description: 'Description for new category 2.',
             image: 'https://via.placeholder.com/150'
         },
         // Add more categories as needed
